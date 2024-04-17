@@ -12,4 +12,13 @@ int main() {
 }
 ```
 
+## Construction exécutable
+```
+g++ -o Hello hello_main.cpp
+```
+## Exécution
+```
+./Hello
+```
+
 
