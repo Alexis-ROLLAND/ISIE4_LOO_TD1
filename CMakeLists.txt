@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.4)		# never set less 3.4 min version
-project(TestTemplate)
+project(LOO_CCP_TD1)
 
 # Build type is debug by default
 # call cmake .. -DCMAKE_BUILD_TYPE=Release to change to relase
@@ -19,7 +19,8 @@ message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
 include_directories(include)
 
-add_executable(testTemplate src/test_Template.cpp src/Template.cpp)
+add_executable(td1 src/td1_main.cpp src/lib_td1.cpp)
+
 
 
 
