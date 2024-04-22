@@ -25,7 +25,7 @@ int main(){
 
     dump(A);
 
-    const   point   OriginWhite{0,0,{255,255,255}};
+    const   point   OriginWhite{0,0,White};
     dump(OriginWhite);
 
     //Move(OriginWhite,10,10);    // NOK car OriginWhite est un const point

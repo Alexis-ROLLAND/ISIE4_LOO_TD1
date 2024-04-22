@@ -26,6 +26,11 @@ struct point{
     couleur_t   Couleur;    /**< Color */
 };
 
+constexpr   couleur_t   Black{0,0,0};
+constexpr   couleur_t   White{255,255,255};
+
+
+
 void    dump(const point &Point);
 
 bool    Move(point &Point, int16_t DeltaX, int16_t DeltaY);
