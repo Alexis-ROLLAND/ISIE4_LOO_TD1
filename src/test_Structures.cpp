@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <print>
 #include "lib_TD1_structures.hpp"
 
 
@@ -35,29 +36,29 @@ int main(){
 
     bool    Res;
     Res = Move(Traveler,100,100);   // Should be successfull
-    if (Res == true) std::printf("Successfull move\n");
-    else std::printf("Unsuccessfull move\n");
+    if (Res == true) std::print("Successfull move\n");
+    else std::print("Unsuccessfull move\n");
     dump(Traveler);
 
 
     Res = Move(Traveler,-10000,0);    // Should be unsuccessfull
-    if (Res == true) std::printf("Successfull move\n");
-    else std::printf("Unsuccessfull move\n");
+    if (Res == true) std::print("Successfull move\n");
+    else std::print("Unsuccessfull move\n");
     dump(Traveler);
 
     Res = Move(Traveler,0,-10000);      // Should be unsuccessfull
-    if (Res == true) std::printf("Successfull move\n");
-    else std::printf("Unsuccessfull move\n");
+    if (Res == true) std::print("Successfull move\n");
+    else std::print("Unsuccessfull move\n");
     dump(Traveler);
 
     Res = Move(Traveler,10000,100);   // Should be successfull
-    if (Res == true) std::printf("Successfull move\n");
-    else std::printf("Unsuccessfull move\n");
+    if (Res == true) std::print("Successfull move\n");
+    else std::print("Unsuccessfull move\n");
     dump(Traveler);
 
     Res = Move(Traveler,30000,0);   // Should be successfull
-    if (Res == true) std::printf("Successfull move\n");
-    else std::printf("Unsuccessfull move\n");
+    if (Res == true) std::print("Successfull move\n");
+    else std::print("Unsuccessfull move\n");
     dump(Traveler);
 
     Res = Move(Traveler,30000,0);   // Should now be unsuccessfull
