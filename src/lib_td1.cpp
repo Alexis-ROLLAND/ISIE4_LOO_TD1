@@ -7,14 +7,16 @@ void    DireBonjour(void){
 }
 
 void    DireBonjour(std::string Nom){
-    std::cout << "Bonjour " << Nom << std::endl;
+    std::cout << "Old C++ : Bonjour " << Nom << std::endl;
+    std::println("C++23 : Bonjour {}",Nom);
 }
 #endif /*  WITH_OVERLOAD  */
 //----------------------------------------------------------------------------
 #ifdef  WITH_DEFAULT_VALUE
 
 void    DireBonjour(std::string Nom){
-    std::cout << "Bonjour " << Nom << std::endl;
+    std::cout << "Old C++ : Bonjour " << Nom << std::endl;
+    std::println("C++23 : Bonjour {}",Nom);
 }
 
 #endif  /*  WITH_DEFAULT_VALUE  */
