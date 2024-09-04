@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.4)		# never set less 3.4 min version
+cmake_minimum_required(VERSION 3.11)		# never set less 3.4 min version
 project(LOO_CCP_TD1)
 
 # Build type is debug by default
