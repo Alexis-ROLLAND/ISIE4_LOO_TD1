@@ -83,7 +83,7 @@ void    Swap(int &a, int &b);
  *          
  * @param[out]       <T> a : premier objet
  * @param[out]       <T> b : second objet
- * @return      Taille de <T> (int)
+ * @return      Taille de <T> (std::size_t)
 */
 template<typename T>
 std::size_t templateSwap(T *pa, T *pb){std::swap(*pa, *pb);return sizeof(T);};
@@ -93,7 +93,7 @@ std::size_t templateSwap(T *pa, T *pb){std::swap(*pa, *pb);return sizeof(T);};
  *          
  * @param[out]       <T> a : premier objet
  * @param[out]       <T> b : second objet
- * @return      Taille de <T> (int)
+ * @return      Taille de <T> (std::size_t)
 */
 template<typename T>
 std::size_t templateSwap(T &a, T &b){std::swap(a, b);return sizeof(T);};
