@@ -1,17 +1,14 @@
 // Your First C++ Program
 
 #include <iostream>
-#include <print>    // for std::println
+#include <print> // for std::println - Do not forget the --std=c++23 g++ option
 
-int main() {
+int main()
+{
 
-    printf("Hello World! - C flavour\n");   // C flavour, not C++
-    std::cout << "Hello World! - Old C++ flavour" << std::endl;   //  Old C++ flavour
-    std::printf("Hello World! - C++11 flavour\n");     // C++11 flavour 
-    std::println("Hello World! - C++23 flavour");       // C++23 flavour (g++ 14.0 min)
+    printf("Hello World! - C flavour\n");                       // C flavour, not C++
+    std::cout << "Hello World! - Old C++ flavour" << std::endl; //  Old C++ flavour
+    std::printf("Hello World! - C++11 flavour\n");              // C++11 flavour
+    std::println("Hello World! - C++23 flavour");               // C++23 flavour (g++ 14.0 min)
     return 0;
 }
-
-
-
-
