@@ -4,7 +4,7 @@
 void dump(const point &Point)
 {
     // std::printf("Point (x,y,r,v,b) : %d %d %d %d %d\n",Point.x, Point.y, Point.Couleur.Red, Point.Couleur.Green, Point.Couleur.Blue);
-    std::println("Point (x,y,r,v,b) : {0:d} {1:d} {2:d} {3:d}", Point.x, Point.y, Point.Couleur.Red, Point.Couleur.Green, Point.Couleur.Blue);
+    std::println("Point (x,y,r,v,b) : {0:d} {1:d} {2:d} {3:d} {4:d}", Point.x, Point.y, Point.Couleur.Red, Point.Couleur.Green, Point.Couleur.Blue);
 }
 //----------------------------------------------------------------------------
 bool Move(point &Point, int16_t DeltaX, int16_t DeltaY)
