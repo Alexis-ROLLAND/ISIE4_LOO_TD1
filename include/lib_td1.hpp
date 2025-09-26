@@ -36,7 +36,7 @@ void DireBonjour();
  * @param[in]       std::string Nom
  * @return  Rien
  */
-void DireBonjour(std::string Nom);
+void DireBonjour(const std::string &Nom);
 
 #endif /*  WITH_OVERLOAD   */
 
@@ -47,7 +47,7 @@ void DireBonjour(std::string Nom);
  * @param[in]       std::string Nom  / Default value = "" (empty string)
  * @return  Rien
  */
-void DireBonjour(std::string Nom = "");
+void DireBonjour(const std::string &Nom = "");
 #endif /*  WITH_DEFAULT_VALUE  */
 
 /**---------------------------------------------------------------------------
@@ -59,10 +59,10 @@ void DireBonjour(std::string Nom = "");
  *          Calcule la sortie d'un capteur en fonction de l'entrée, de sa sensibilité et d'un éventuel offset
  *          Sortie = (Entrée * Sensibilité) + offset
  *
- * @param[in]       double Entree : Valeur de l'entrée
- * @param[in]       double Sensibilite : Sensibilité du capteur
- * @param[in]       double Offset : offset du capteur / Default value = 0
- * @return          Valeur de sortie du capteur (double)
+ * @param   double Entree : Valeur de l'entrée
+ * @param   double Sensibilite : Sensibilité du capteur
+ * @param   double Offset : offset du capteur / Default value = 0
+ * @return  Valeur de sortie du capteur (double)
  */
 double CalculerSortieCapteur(double Entree, double Sensibilite, double Offset = 0);
 
@@ -73,8 +73,8 @@ double CalculerSortieCapteur(double Entree, double Sensibilite, double Offset = 
 /**
  * @brief   Fonction Swap / Pointer version
  *
- * @param[out]       int a : premier entier
- * @param[out]       int b : second entier
+ * @param[out]       int *pa : premier entier (adresse)
+ * @param[out]       int *pb : second entier (adresse)
  * @return  Rien
  */
 void Swap(int *pa, int *pb);
@@ -82,8 +82,8 @@ void Swap(int *pa, int *pb);
 /**
  * @brief   Fonction Swap / Reference version
  *
- * @param[out]       int a : premier entier
- * @param[out]       int b : second entier
+ * @param[out]       int a : premier entier (référence)
+ * @param[out]       int b : second entier (référence)
  * @return  Rien
  */
 void Swap(int &a, int &b);
@@ -91,8 +91,8 @@ void Swap(int &a, int &b);
 /**
  * @brief   Fonction templateSwap (pointer version)
  *
- * @param[out]       <T> a : premier objet
- * @param[out]       <T> b : second objet
+ * @param[out]       <T> *pa : premier objet (adresse)
+ * @param[out]       <T> *pb : second objet (adresse)
  * @return      Taille de <T> (std::size_t)
  */
 template <typename T>
@@ -105,8 +105,8 @@ std::size_t templateSwap(T *pa, T *pb)
 /**
  * @brief   Fonction templateSwap (Reference version)
  *
- * @param[out]       <T> a : premier objet
- * @param[out]       <T> b : second objet
+ * @param[out]       <T> a : premier objet (référence)
+ * @param[out]       <T> b : second objet (référence)
  * @return      Taille de <T> (std::size_t)
  */
 template <typename T>

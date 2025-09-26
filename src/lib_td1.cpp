@@ -10,15 +10,17 @@ void DireBonjour()
 void DireBonjour(const std::string &Nom)
 {
     std::cout << "Old C++ : Bonjour " << Nom << std::endl;
+    std::printf("C++11 : Bonjour %s\n", Nom.c_str());
     std::println("C++23 : Bonjour {}", Nom);
 }
 #endif /*  WITH_OVERLOAD  */
 //----------------------------------------------------------------------------
 #ifdef WITH_DEFAULT_VALUE
 
-void DireBonjour(std::string Nom)
+void DireBonjour(const std::string &Nom)
 {
     std::cout << "Old C++ : Bonjour " << Nom << std::endl;
+    std::printf("C++11 : Bonjour %s\n", Nom.c_str());
     std::println("C++23 : Bonjour {}", Nom);
 }
 
