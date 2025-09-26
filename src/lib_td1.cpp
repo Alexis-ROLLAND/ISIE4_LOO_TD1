@@ -2,12 +2,12 @@
 
 //----------------------------------------------------------------------------
 #ifdef WITH_OVERLOAD
-void DireBonjour(void)
+void DireBonjour()
 {
     std::cout << "Bonjour" << std::endl;
 }
 
-void DireBonjour(std::string Nom)
+void DireBonjour(const std::string &Nom)
 {
     std::cout << "Old C++ : Bonjour " << Nom << std::endl;
     std::println("C++23 : Bonjour {}", Nom);
