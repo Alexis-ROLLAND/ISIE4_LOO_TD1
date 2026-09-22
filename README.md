@@ -20,5 +20,7 @@ g++ -o Hello hello_main.cpp
 ```
 ./Hello
 ```
+## Full build command line
+g++ -o HelloWorld Hello.cpp -std=c++23 -Wall -Wextra -Wpedantic
 
 
