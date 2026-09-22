@@ -18,8 +18,8 @@
  *  DireBonjour
  --------------------------------------------------------------------------- */
 
-#define WITH_OVERLOAD
-// #define WITH_DEFAULT_VALUE
+// #define WITH_OVERLOAD
+#define WITH_DEFAULT_VALUE
 
 #ifdef WITH_OVERLOAD
 /**
