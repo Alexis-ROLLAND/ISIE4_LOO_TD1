@@ -11,8 +11,8 @@
 #define __LIB_TD1_HPP__
 
 #include <iostream>
-#include <string>
 #include <print>
+#include <string>
 
 /** --------------------------------------------------------------------------
  *  DireBonjour
@@ -95,9 +95,7 @@ void Swap(int &a, int &b);
  * @param[out]       <T> *pb : second objet (adresse)
  * @return      Taille de <T> (std::size_t)
  */
-template <typename T>
-std::size_t templateSwap(T *pa, T *pb)
-{
+template <typename T> std::size_t templateSwap(T *pa, T *pb) {
     std::swap(*pa, *pb);
     return sizeof(T);
 };
@@ -109,9 +107,7 @@ std::size_t templateSwap(T *pa, T *pb)
  * @param[out]       <T> b : second objet (référence)
  * @return      Taille de <T> (std::size_t)
  */
-template <typename T>
-std::size_t templateSwap(T &a, T &b)
-{
+template <typename T> std::size_t templateSwap(T &a, T &b) {
     std::swap(a, b);
     return sizeof(T);
 };
